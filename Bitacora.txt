@@ -1,0 +1,16 @@
+Cerré el folder anterior y abrí LIEBRE-ARCIENEGA vacío.Creé app.js y copié contenido de otro.
+No hice npm init ni install previamente
+Intenté correrlo pero no encontraba el módulo express. Lo instalé. Creó: package-lock, node_modules y me
+alertó por la faltra del package.JSON
+Vuelvo a ejecutar node.js y levanta exitosamente el servidor con prueba en chrome OK ¿Que raro?
+Hice npm init con todo enter: creó el package.JSON conla dependencia de express y el servidor OK!
+HAsta el momento no creó ningún archivo.vs
+Al revisar git status me da fatal: not a git repository (or any of the parent directories): .git
+git init me marcó todo U y 322 en el iconito
+git status me muestra en rojo Untracked Files todos los archivos y la carpeta node_modules/
+
+Copiaré la estructura de directorios en el explorador de Windows
+
+
+
+//LO dejaré aquí nomás y haré otro proyecto nuevo como corresponde
