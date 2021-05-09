@@ -8,9 +8,82 @@ HAsta el momento no creó ningún archivo.vs
 Al revisar git status me da fatal: not a git repository (or any of the parent directories): .git
 git init me marcó todo U y 322 en el iconito
 git status me muestra en rojo Untracked Files todos los archivos y la carpeta node_modules/
+Bitácora me salia la á con caracteres de escape. No me dejaba añadirla con git add
+Añadí un archivo parasacar vacío para hacer pruebas
+git add package.json si lo tomó advirtiendo que cambiaba LF por clrf manteniendo el original en la raía
+git rm --cached package.json   para removerlo del stage
+ahora toma los git add individuales. Ojo que es case sensitive con los nombres de los archivos
+git commit -m "1er subida de bitacora y parasacar sin definir remote todavía"   y devuelve:
+[master (root-commit) f828368] 1er subida de bitacora y parasacar sin definir remote todavía
+ 2 files changed, 16 insertions(+)
+ create mode 100644 Bitacora.txt
+ create mode 100644 parasacar
+ en git status ya no salen pero dice nothing added to commit but untracked files present (use "git add" to track)
+ Continuaré como dice github.com para crear un nuevo repositorio en la CLI
+ git commit -m "REcién creé README.md y lo comiteo"   y genera:    
+[   master 453b873] REcién creé README.md y lo comiteo
+    1 file changed, 0 insertions(+), 0 deletions(-)
+    create mode 100644 README.md
+git status --show-stash                                  
+    On branch master
+    Untracked files:
+        (use "git add <file>..." to include in what will be committed)
+        app.js
+        node_modules/
+        package-lock.json
+        package.json
 
+    nothing added to commit but untracked files present (use "git add" to track)
+Observo que no aparecen los comiteados
+git branch -M main para cambiarla de master a main
+git remote add origin https://github.com/pabloarcienega/Liebre-Arcienega.git   y me arroja:
+    error: remote origin already exists.          Entonces iré por:
+git push -u origin main     y me sale GitHub Sign in. Elijo sign in with your browser y tira:
+info: please complete authentication in your browser...
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (7/7), 1.09 KiB | 556.00 KiB/s, done.
+Total 7 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), done.
+To https://github.com/pabloarcienega/Liebre-Arcienega.git
+ * [new branch]      main -> main
+Branch 'main' set up to track remote branch 'main' from 'origin'.
 Copiaré la estructura de directorios en el explorador de Windows
+Por fin apareció la rama main en github. Subió los 3 archs ok. De Bitacora la última grabada
+git add node_modules y puso todos sus archivos en el stage. Para sacarlos de ahí usé:
+git rm --cached *       y largó:
+rm 'Bitacora.txt'
+rm 'README.md'
+rm 'node_modules/.bin/mime'
+rm 'node_modules/.bin/mime.cmd'
+    .
+    .
+rm 'node_modules/vary/package.json'
+rm 'parasacar'
+Luego de un    git status       tiró
+git status
+On branch main
+Your branch is up to date with 'origin/main'.
 
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        deleted:    Bitacora.txt
+        deleted:    README.md
+        deleted:    parasacar
 
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Bitacora.txt
+        README.md
+        app.js
+        node_modules/
+        package-lock.json
+        package.json
+        parasacar
 
+Ahora comitearé este archivo solamente
+
+Quisiera ver que pasa si borro físicamente un archivo
 //LO dejaré aquí nomás y haré otro proyecto nuevo como corresponde
