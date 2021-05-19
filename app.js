@@ -11,5 +11,5 @@ app.get('/', (req, res) => {
 
 })
 
-app.listen(3000, ()=>{console.log('Server running en http://localhost:${port}')});
+app.listen(port, ()=>{console.log('Server running en http://localhost:${port}')});
 
