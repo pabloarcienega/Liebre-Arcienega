@@ -1,0 +1,151 @@
+/*
+Paleta de colores
+Amarillo: #EAC926;
+Azul: #03264C;
+Celeste: #1259c3;
+Gris oscuro: #666;
+Gris claro: #ebebeb;
+Verde: #39b54a;
+
+Tamaños Tipográficos
+Familia: 'Roboto'
+Cuerpos de texto: 12px
+Titulares (Basado en tu última visita/Ofertas): 24px
+Precios: 18px
+Descuentos: 16px
+Descripciones: 16px
+
+Icons
+https://fontawesome.com/icons?d=gallery&m=free
+
+*/
+
+*{
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto';
+}
+
+.main-header {
+    background-color: #EAC926;
+    padding: 20px
+}
+.main-main{
+    position: 0 auto;
+    width: 20%;
+}
+.hamburger-button {
+    background-color: #03264C;
+    color: #ffffff;
+    display: block;
+    max-width: 50px;
+    padding: 15 px 0;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 18px;
+    margin: auto;
+}
+
+.logo{ 
+    display: ;
+    width:200px; 
+}
+
+.copy-header {
+    font: weight 400px;
+    text-align: center;
+}
+
+.main-navbar{
+    /*display: none;*/
+}
+
+.main-navbar ul{
+    list-style: none;
+    margin 0;
+    padding: 0;
+    font-size: 12px;
+}
+
+.main-navbar a{
+    text-decoration: none;
+    color:#222222;
+    display: inline-block;
+    padding: 5px 0;
+    font-size: 17px;
+}
+
+.titulares {
+    font-size: 24px;
+}
+.icon-truck{
+    color: #39b54a;
+    border: #39b54a solid;
+    padding: 8px;
+    border-radius: 50%;
+}
+.precios {
+    font-size: 18px;
+}
+.desc{
+    font-size: 16px;
+}
+.imagenes-prods{
+    display: block;
+    max-width: 150px;
+}
+.icon-footer{
+    color: #1259c3;
+    font-size: 16px;
+    text-align: center;
+    font-weight: 700;    
+}
+.tit-footer{
+    font-size: 16px;
+    text-align: center;
+    font-weight: 700;
+}
+.main-banner{
+    /*display: block;*/
+    width: auto;
+    max-width: 200px;
+}
+.li-footer{
+    font-size: 12px;
+    text-align: center;
+    font-weight: 100;
+    list-style: none;
+}
+
+.create-form {
+    display: none;
+    padding: 20px 15px;
+}
+
+.control-formulario {
+    margin-bottom: 15px;
+}
+
+.control-formulario label {
+    margin-bottom: 5px;
+    font-style: italic;
+    display: block;
+}
+
+.control {
+    width: 100%;
+    padding: 8px 0;
+
+}
+
+.boton-formulario {
+    background-color: #39b54a;
+    border: none;
+    font-size:20px;
+    color: #ffffff;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
